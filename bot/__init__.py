@@ -29,7 +29,23 @@ from telethon.utils import pack_bot_file_id
 from .config import *
 LOG_FILE_NAME = "TGVid-Comp@Log.txt"
 
+AUTH_USERS = [1956035465]
 
+SESSION_NAME = "WtfMan"
+TG_BOT_TOKEN = "5290244482:AAEJIeFcfIdkvwuERUa1ALyHcmPulNB_-qs"
+APP_ID = 5631660
+API_HASH = "0a814444441309bc1f1bb2a0e340242a"
+
+LOG_CHANNEL = "soksks"  # make sure to us this 
+DOWNLOAD_LOCATION = "/app/downloads"
+FREE_USER_MAX_FILE_SIZE = 2097152000
+MAX_MESSAGE_LENGTH = 4096
+FINISHED_PROGRESS_STR = "▓"
+UN_FINISHED_PROGRESS_STR = "░"
+BOT_START_TIME = time.time()
+LOG_FILE_ZZGEVC = "Log.txt"
+BOT_USERNAME = "zoro_pmbot"
+UPDATES_CHANNEL = "spartaenc"
 
 if os.path.exists(LOG_FILE_NAME):
     with open(LOG_FILE_NAME, "r+") as f_d:
