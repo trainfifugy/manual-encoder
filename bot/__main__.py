@@ -66,6 +66,11 @@ async def _(e):
         return e.reply("**Sorry You're not An Authorised User!**")
     await up(e)
 
+@app.on_message(filters.incoming & filters.command(["restart", f"restart@{BOT_USERNAME}"]))
+    async def restarter(app, message):
+        if message.from_user.id in OWNER:
+            await message.reply_text("•Restarting")
+            quit(1)
 
 @bot.on(events.NewMessage(pattern="/sysinfo"))
 async def _(e):
